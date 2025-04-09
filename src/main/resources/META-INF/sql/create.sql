@@ -1,0 +1,24 @@
+CREATE TABLE IF NOT EXISTS ADHERENT (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(255),
+    email VARCHAR(255),
+    passwordHash VARCHAR(255)
+);
+
+CREATE TABLE IF NOT EXISTS TOURNOI (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(255),
+    lieu VARCHAR(255),
+    date DATE
+);
+
+CREATE TABLE IF NOT EXISTS INSCRIPTION (
+    adherent_id BIGINT,
+    tournoi_id BIGINT,
+    dateInscription DATE,
+    PRIMARY KEY (adherent_id, tournoi_id),
+    FOREIGN KEY (adherent_id) REFERENCES ADHERENT(id),
+    FOREIGN KEY (tournoi_id) REFERENCES TOURNOI(id)
+);
+
+

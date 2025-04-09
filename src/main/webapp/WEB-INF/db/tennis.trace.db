@@ -1,0 +1,462 @@
+2025-04-09 12:16:45.496037+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS ADHERENT ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS ADHERENT ( [42001-232]
+2025-04-09 12:16:45.498070+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]id BIGINT PRIMARY KEY AUTO_INCREMENT,"; expected "INSERT"; SQL statement:
+id BIGINT PRIMARY KEY AUTO_INCREMENT, [42001-232]
+2025-04-09 12:16:45.501655+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]nom VARCHAR(255),"; SQL statement:
+nom VARCHAR(255), [42000-232]
+2025-04-09 12:16:45.506010+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]email VARCHAR(255),"; expected "EXPLAIN, EXECUTE"; SQL statement:
+email VARCHAR(255), [42001-232]
+2025-04-09 12:16:45.509828+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]passwordHash VARCHAR(255)"; expected "PREPARE"; SQL statement:
+passwordHash VARCHAR(255) [42001-232]
+2025-04-09 12:16:45.513341+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:16:45.516349+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TOURNOI ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS TOURNOI ( [42001-232]
+2025-04-09 12:16:45.520348+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]id BIGINT PRIMARY KEY AUTO_INCREMENT,"; expected "INSERT"; SQL statement:
+id BIGINT PRIMARY KEY AUTO_INCREMENT, [42001-232]
+2025-04-09 12:16:45.524869+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]nom VARCHAR(255),"; SQL statement:
+nom VARCHAR(255), [42000-232]
+2025-04-09 12:16:45.527907+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]lieu VARCHAR(255),"; SQL statement:
+lieu VARCHAR(255), [42000-232]
+2025-04-09 12:16:45.531539+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]date DATE"; expected "DELETE, DROP"; SQL statement:
+date DATE [42001-232]
+2025-04-09 12:16:45.535546+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:16:45.539651+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS INSCRIPTION ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS INSCRIPTION ( [42001-232]
+2025-04-09 12:16:45.543072+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]adherent_id BIGINT,"; expected "ALTER, ANALYZE"; SQL statement:
+adherent_id BIGINT, [42001-232]
+2025-04-09 12:16:45.547077+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]tournoi_id BIGINT,"; expected "TRUNCATE"; SQL statement:
+tournoi_id BIGINT, [42001-232]
+2025-04-09 12:16:45.550076+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]dateInscription DATE,"; expected "DELETE, DROP"; SQL statement:
+dateInscription DATE, [42001-232]
+2025-04-09 12:16:45.554627+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]PRIMARY KEY (adherent_id, tournoi_id),"; SQL statement:
+PRIMARY KEY (adherent_id, tournoi_id), [42000-232]
+2025-04-09 12:16:45.557698+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (adherent_id) REFERENCES ADHERENT(id),"; SQL statement:
+FOREIGN KEY (adherent_id) REFERENCES ADHERENT(id), [42000-232]
+2025-04-09 12:16:45.561778+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (tournoi_id) REFERENCES TOURNOI(id)"; SQL statement:
+FOREIGN KEY (tournoi_id) REFERENCES TOURNOI(id) [42000-232]
+2025-04-09 12:16:45.565216+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:16:45.570285+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TOURNOI" not found (this database is empty); SQL statement:
+INSERT INTO TOURNOI (id, nom, lieu, date) VALUES [42104-232]
+2025-04-09 12:16:45.574000+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]1, 'Roland Garros', 'Paris', DATE '2025-06-01'),"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(1, 'Roland Garros', 'Paris', DATE '2025-06-01'), [42001-232]
+2025-04-09 12:16:45.578004+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]2, 'Wimbledon', 'London', DATE '2025-07-10'),"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(2, 'Wimbledon', 'London', DATE '2025-07-10'), [42001-232]
+2025-04-09 12:16:45.581604+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]3, 'US Open', 'New York', DATE '2025-08-25')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(3, 'US Open', 'New York', DATE '2025-08-25') [42001-232]
+2025-04-09 12:16:46.219186+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ADHERENT" not found (this database is empty); SQL statement:
+select a1_0.id,a1_0.email,a1_0.nom,a1_0.passwordHash from Adherent a1_0 where a1_0.email=? [42104-232]
+2025-04-09 12:17:42.394485+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS ADHERENT ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS ADHERENT ( [42001-232]
+2025-04-09 12:17:42.396484+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]id BIGINT PRIMARY KEY AUTO_INCREMENT,"; expected "INSERT"; SQL statement:
+id BIGINT PRIMARY KEY AUTO_INCREMENT, [42001-232]
+2025-04-09 12:17:42.401494+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]nom VARCHAR(255),"; SQL statement:
+nom VARCHAR(255), [42000-232]
+2025-04-09 12:17:42.405723+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]email VARCHAR(255),"; expected "EXPLAIN, EXECUTE"; SQL statement:
+email VARCHAR(255), [42001-232]
+2025-04-09 12:17:42.410723+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]passwordHash VARCHAR(255)"; expected "PREPARE"; SQL statement:
+passwordHash VARCHAR(255) [42001-232]
+2025-04-09 12:17:42.415238+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:17:42.420237+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TOURNOI ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS TOURNOI ( [42001-232]
+2025-04-09 12:17:42.425757+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]id BIGINT PRIMARY KEY AUTO_INCREMENT,"; expected "INSERT"; SQL statement:
+id BIGINT PRIMARY KEY AUTO_INCREMENT, [42001-232]
+2025-04-09 12:17:42.430757+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]nom VARCHAR(255),"; SQL statement:
+nom VARCHAR(255), [42000-232]
+2025-04-09 12:17:42.435270+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]lieu VARCHAR(255),"; SQL statement:
+lieu VARCHAR(255), [42000-232]
+2025-04-09 12:17:42.440270+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]date DATE"; expected "DELETE, DROP"; SQL statement:
+date DATE [42001-232]
+2025-04-09 12:17:42.444798+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:17:42.448797+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS INSCRIPTION ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS INSCRIPTION ( [42001-232]
+2025-04-09 12:17:42.451826+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]adherent_id BIGINT,"; expected "ALTER, ANALYZE"; SQL statement:
+adherent_id BIGINT, [42001-232]
+2025-04-09 12:17:42.455842+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]tournoi_id BIGINT,"; expected "TRUNCATE"; SQL statement:
+tournoi_id BIGINT, [42001-232]
+2025-04-09 12:17:42.458842+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]dateInscription DATE,"; expected "DELETE, DROP"; SQL statement:
+dateInscription DATE, [42001-232]
+2025-04-09 12:17:42.461836+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]PRIMARY KEY (adherent_id, tournoi_id),"; SQL statement:
+PRIMARY KEY (adherent_id, tournoi_id), [42000-232]
+2025-04-09 12:17:42.464879+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (adherent_id) REFERENCES ADHERENT(id),"; SQL statement:
+FOREIGN KEY (adherent_id) REFERENCES ADHERENT(id), [42000-232]
+2025-04-09 12:17:42.468870+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (tournoi_id) REFERENCES TOURNOI(id)"; SQL statement:
+FOREIGN KEY (tournoi_id) REFERENCES TOURNOI(id) [42000-232]
+2025-04-09 12:17:42.471373+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:17:42.479385+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TOURNOI" not found (this database is empty); SQL statement:
+INSERT INTO TOURNOI (id, nom, lieu, date) VALUES [42104-232]
+2025-04-09 12:17:42.480376+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]1, 'Roland Garros', 'Paris', DATE '2025-06-01'),"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(1, 'Roland Garros', 'Paris', DATE '2025-06-01'), [42001-232]
+2025-04-09 12:17:42.485880+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]2, 'Wimbledon', 'London', DATE '2025-07-10'),"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(2, 'Wimbledon', 'London', DATE '2025-07-10'), [42001-232]
+2025-04-09 12:17:42.491383+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]3, 'US Open', 'New York', DATE '2025-08-25')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(3, 'US Open', 'New York', DATE '2025-08-25') [42001-232]
+2025-04-09 12:17:42.538538+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ADHERENT" not found (this database is empty); SQL statement:
+insert into Adherent (email,nom,passwordHash,id) values (?,?,?,default) [42104-232]
+2025-04-09 12:27:02.958295+02:00 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.close(Store.java:374)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1292)
+	at org.h2.engine.Database.closeImpl(Database.java:1254)
+	at org.h2.engine.Database.close(Database.java:1173)
+	at org.h2.engine.Database.onShutdown(Database.java:1158)
+	at org.h2.engine.OnExitDatabaseCloser.onShutdown(OnExitDatabaseCloser.java:85)
+	at org.h2.engine.OnExitDatabaseCloser.run(OnExitDatabaseCloser.java:114)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 8 more
+Caused by: org.h2.mvstore.MVStoreException: java.lang.NoClassDefFoundError: java/util/PriorityQueue [2.3.232/3]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.MVStore.tryExecuteUnderStoreLock(MVStore.java:941)
+	at org.h2.mvstore.FileStore.compact(FileStore.java:879)
+	at org.h2.mvstore.RandomAccessStore.compactStore(RandomAccessStore.java:441)
+	at org.h2.mvstore.FileStore.compactStore(FileStore.java:890)
+	at org.h2.mvstore.FileStore.stop(FileStore.java:275)
+	at org.h2.mvstore.MVStore.closeStore(MVStore.java:693)
+	at org.h2.mvstore.MVStore.close(MVStore.java:643)
+	at org.h2.mvstore.db.Store.close(Store.java:364)
+	... 6 more
+Caused by: java.lang.NoClassDefFoundError: java/util/PriorityQueue
+	at org.h2.mvstore.FileStore.findOldChunks(FileStore.java:1788)
+	at org.h2.mvstore.FileStore.rewriteChunks(FileStore.java:1859)
+	at org.h2.mvstore.FileStore.lambda$compact$0(FileStore.java:879)
+	at org.h2.mvstore.MVStore.tryExecuteUnderStoreLock(MVStore.java:937)
+	... 13 more
+Caused by: java.lang.ClassNotFoundException: Illegal access: this web application instance has been stopped already. Could not load [java.util.PriorityQueue]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1388)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1187)
+	... 17 more
+Caused by: java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [java.util.PriorityQueue]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1398)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1386)
+	... 19 more
+2025-04-09 12:27:43.563117+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ADHERENT ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE ADHERENT ( [42001-232]
+2025-04-09 12:27:43.566115+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]id BIGINT PRIMARY KEY AUTO_INCREMENT,"; expected "INSERT"; SQL statement:
+id BIGINT PRIMARY KEY AUTO_INCREMENT, [42001-232]
+2025-04-09 12:27:43.570117+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]nom VARCHAR(255),"; SQL statement:
+nom VARCHAR(255), [42000-232]
+2025-04-09 12:27:43.574180+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]email VARCHAR(255),"; expected "EXPLAIN, EXECUTE"; SQL statement:
+email VARCHAR(255), [42001-232]
+2025-04-09 12:27:43.578197+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]passwordHash VARCHAR(255)"; expected "PREPARE"; SQL statement:
+passwordHash VARCHAR(255) [42001-232]
+2025-04-09 12:27:43.580183+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:27:43.584697+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TOURNOI ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE TOURNOI ( [42001-232]
+2025-04-09 12:27:43.587696+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]id BIGINT PRIMARY KEY AUTO_INCREMENT,"; expected "INSERT"; SQL statement:
+id BIGINT PRIMARY KEY AUTO_INCREMENT, [42001-232]
+2025-04-09 12:27:43.591695+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]nom VARCHAR(255),"; SQL statement:
+nom VARCHAR(255), [42000-232]
+2025-04-09 12:27:43.595207+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]lieu VARCHAR(255),"; SQL statement:
+lieu VARCHAR(255), [42000-232]
+2025-04-09 12:27:43.598201+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]date DATE"; expected "DELETE, DROP"; SQL statement:
+date DATE [42001-232]
+2025-04-09 12:27:43.601705+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:27:43.605712+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE INSCRIPTION ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE INSCRIPTION ( [42001-232]
+2025-04-09 12:27:43.608712+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]adherent_id BIGINT,"; expected "ALTER, ANALYZE"; SQL statement:
+adherent_id BIGINT, [42001-232]
+2025-04-09 12:27:43.612804+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]tournoi_id BIGINT,"; expected "TRUNCATE"; SQL statement:
+tournoi_id BIGINT, [42001-232]
+2025-04-09 12:27:43.616789+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]dateInscription DATE,"; expected "DELETE, DROP"; SQL statement:
+dateInscription DATE, [42001-232]
+2025-04-09 12:27:43.619789+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]PRIMARY KEY (adherent_id, tournoi_id),"; SQL statement:
+PRIMARY KEY (adherent_id, tournoi_id), [42000-232]
+2025-04-09 12:27:43.623303+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (adherent_id) REFERENCES ADHERENT(id),"; SQL statement:
+FOREIGN KEY (adherent_id) REFERENCES ADHERENT(id), [42000-232]
+2025-04-09 12:27:43.627305+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (tournoi_id) REFERENCES TOURNOI(id)"; SQL statement:
+FOREIGN KEY (tournoi_id) REFERENCES TOURNOI(id) [42000-232]
+2025-04-09 12:27:43.630305+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:27:43.633811+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TOURNOI" not found (this database is empty); SQL statement:
+INSERT INTO TOURNOI (id, nom, lieu, date) VALUES [42104-232]
+2025-04-09 12:27:43.636813+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]1, 'Roland Garros', 'Paris', DATE '2025-06-01'),"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(1, 'Roland Garros', 'Paris', DATE '2025-06-01'), [42001-232]
+2025-04-09 12:27:43.640813+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]2, 'Wimbledon', 'London', DATE '2025-07-10'),"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(2, 'Wimbledon', 'London', DATE '2025-07-10'), [42001-232]
+2025-04-09 12:27:43.645322+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]3, 'US Open', 'New York', DATE '2025-08-25')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(3, 'US Open', 'New York', DATE '2025-08-25') [42001-232]
+2025-04-09 12:27:44.214634+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ADHERENT" not found (this database is empty); SQL statement:
+select a1_0.id,a1_0.email,a1_0.nom,a1_0.passwordHash from Adherent a1_0 where a1_0.email=? [42104-232]
+2025-04-09 12:28:17.788135+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ADHERENT ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE ADHERENT ( [42001-232]
+2025-04-09 12:28:17.788135+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]id BIGINT PRIMARY KEY AUTO_INCREMENT,"; expected "INSERT"; SQL statement:
+id BIGINT PRIMARY KEY AUTO_INCREMENT, [42001-232]
+2025-04-09 12:28:17.792568+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]nom VARCHAR(255),"; SQL statement:
+nom VARCHAR(255), [42000-232]
+2025-04-09 12:28:17.795690+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]email VARCHAR(255),"; expected "EXPLAIN, EXECUTE"; SQL statement:
+email VARCHAR(255), [42001-232]
+2025-04-09 12:28:17.798678+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]passwordHash VARCHAR(255)"; expected "PREPARE"; SQL statement:
+passwordHash VARCHAR(255) [42001-232]
+2025-04-09 12:28:17.802283+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:28:17.805408+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TOURNOI ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE TOURNOI ( [42001-232]
+2025-04-09 12:28:17.809423+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]id BIGINT PRIMARY KEY AUTO_INCREMENT,"; expected "INSERT"; SQL statement:
+id BIGINT PRIMARY KEY AUTO_INCREMENT, [42001-232]
+2025-04-09 12:28:17.813142+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]nom VARCHAR(255),"; SQL statement:
+nom VARCHAR(255), [42000-232]
+2025-04-09 12:28:17.816139+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]lieu VARCHAR(255),"; SQL statement:
+lieu VARCHAR(255), [42000-232]
+2025-04-09 12:28:17.820140+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]date DATE"; expected "DELETE, DROP"; SQL statement:
+date DATE [42001-232]
+2025-04-09 12:28:17.822727+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:28:17.826795+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE INSCRIPTION ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE INSCRIPTION ( [42001-232]
+2025-04-09 12:28:17.829797+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]adherent_id BIGINT,"; expected "ALTER, ANALYZE"; SQL statement:
+adherent_id BIGINT, [42001-232]
+2025-04-09 12:28:17.832397+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]tournoi_id BIGINT,"; expected "TRUNCATE"; SQL statement:
+tournoi_id BIGINT, [42001-232]
+2025-04-09 12:28:17.835461+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]dateInscription DATE,"; expected "DELETE, DROP"; SQL statement:
+dateInscription DATE, [42001-232]
+2025-04-09 12:28:17.839478+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]PRIMARY KEY (adherent_id, tournoi_id),"; SQL statement:
+PRIMARY KEY (adherent_id, tournoi_id), [42000-232]
+2025-04-09 12:28:17.842034+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (adherent_id) REFERENCES ADHERENT(id),"; SQL statement:
+FOREIGN KEY (adherent_id) REFERENCES ADHERENT(id), [42000-232]
+2025-04-09 12:28:17.846123+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (tournoi_id) REFERENCES TOURNOI(id)"; SQL statement:
+FOREIGN KEY (tournoi_id) REFERENCES TOURNOI(id) [42000-232]
+2025-04-09 12:28:17.849126+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:28:17.855467+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TOURNOI" not found (this database is empty); SQL statement:
+INSERT INTO TOURNOI (id, nom, lieu, date) VALUES [42104-232]
+2025-04-09 12:28:17.859529+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]1, 'Roland Garros', 'Paris', DATE '2025-06-01'),"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(1, 'Roland Garros', 'Paris', DATE '2025-06-01'), [42001-232]
+2025-04-09 12:28:17.863309+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]2, 'Wimbledon', 'London', DATE '2025-07-10'),"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(2, 'Wimbledon', 'London', DATE '2025-07-10'), [42001-232]
+2025-04-09 12:28:17.868329+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]3, 'US Open', 'New York', DATE '2025-08-25')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(3, 'US Open', 'New York', DATE '2025-08-25') [42001-232]
+2025-04-09 12:28:17.900449+02:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ADHERENT" not found (this database is empty); SQL statement:
+insert into Adherent (email,nom,passwordHash,id) values (?,?,?,default) [42104-232]
+2025-04-09 12:29:02.607276+02:00 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ADHERENT" not found (this database is empty); SQL statement:
+INSERT INTO ADHERENT(id, nom, lieu, date) VALUES
+(1, 'Roland Garros', 'Paris', DATE '2025-06-01'),
+(2, 'Wimbledon', 'London', DATE '2025-07-10'),
+(3, 'US Open', 'New York', DATE '2025-08-25') [42104-232]
+2025-04-09 12:30:31.135997+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ADHERENT ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE ADHERENT ( [42001-232]
+2025-04-09 12:30:31.137997+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]id BIGINT PRIMARY KEY AUTO_INCREMENT,"; expected "INSERT"; SQL statement:
+id BIGINT PRIMARY KEY AUTO_INCREMENT, [42001-232]
+2025-04-09 12:30:31.141996+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]nom VARCHAR(255),"; SQL statement:
+nom VARCHAR(255), [42000-232]
+2025-04-09 12:30:31.147106+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]email VARCHAR(255),"; expected "EXPLAIN, EXECUTE"; SQL statement:
+email VARCHAR(255), [42001-232]
+2025-04-09 12:30:31.152107+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]passwordHash VARCHAR(255)"; expected "PREPARE"; SQL statement:
+passwordHash VARCHAR(255) [42001-232]
+2025-04-09 12:30:31.157391+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:30:31.161908+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TOURNOI ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE TOURNOI ( [42001-232]
+2025-04-09 12:30:31.166914+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]id BIGINT PRIMARY KEY AUTO_INCREMENT,"; expected "INSERT"; SQL statement:
+id BIGINT PRIMARY KEY AUTO_INCREMENT, [42001-232]
+2025-04-09 12:30:31.171915+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]nom VARCHAR(255),"; SQL statement:
+nom VARCHAR(255), [42000-232]
+2025-04-09 12:30:31.176080+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]lieu VARCHAR(255),"; SQL statement:
+lieu VARCHAR(255), [42000-232]
+2025-04-09 12:30:31.181073+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]date DATE"; expected "DELETE, DROP"; SQL statement:
+date DATE [42001-232]
+2025-04-09 12:30:31.185171+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:30:31.188163+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE INSCRIPTION ([*]"; expected "identifier"; SQL statement:
+CREATE TABLE INSCRIPTION ( [42001-232]
+2025-04-09 12:30:31.191171+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]adherent_id BIGINT,"; expected "ALTER, ANALYZE"; SQL statement:
+adherent_id BIGINT, [42001-232]
+2025-04-09 12:30:31.194688+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]tournoi_id BIGINT,"; expected "TRUNCATE"; SQL statement:
+tournoi_id BIGINT, [42001-232]
+2025-04-09 12:30:31.199690+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]dateInscription DATE,"; expected "DELETE, DROP"; SQL statement:
+dateInscription DATE, [42001-232]
+2025-04-09 12:30:31.203205+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]PRIMARY KEY (adherent_id, tournoi_id),"; SQL statement:
+PRIMARY KEY (adherent_id, tournoi_id), [42000-232]
+2025-04-09 12:30:31.208203+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (adherent_id) REFERENCES ADHERENT(id),"; SQL statement:
+FOREIGN KEY (adherent_id) REFERENCES ADHERENT(id), [42000-232]
+2025-04-09 12:30:31.211209+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (tournoi_id) REFERENCES TOURNOI(id)"; SQL statement:
+FOREIGN KEY (tournoi_id) REFERENCES TOURNOI(id) [42000-232]
+2025-04-09 12:30:31.216220+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-232]
+2025-04-09 12:30:31.220220+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TOURNOI" not found (this database is empty); SQL statement:
+INSERT INTO TOURNOI (id, nom, lieu, date) VALUES [42104-232]
+2025-04-09 12:30:31.223730+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]1, 'Roland Garros', 'Paris', DATE '2025-06-01'),"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(1, 'Roland Garros', 'Paris', DATE '2025-06-01'), [42001-232]
+2025-04-09 12:30:31.226734+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]2, 'Wimbledon', 'London', DATE '2025-07-10'),"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(2, 'Wimbledon', 'London', DATE '2025-07-10'), [42001-232]
+2025-04-09 12:30:31.232239+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]3, 'US Open', 'New York', DATE '2025-08-25')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(3, 'US Open', 'New York', DATE '2025-08-25') [42001-232]
+2025-04-09 12:30:31.240253+02:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TOURNOI" not found (this database is empty); SQL statement:
+select t1_0.id,t1_0.date,t1_0.lieu,t1_0.nom from Tournoi t1_0 [42104-232]
+2025-04-09 12:31:53.221158+02:00 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.close(Store.java:374)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1292)
+	at org.h2.engine.Database.closeImpl(Database.java:1254)
+	at org.h2.engine.Database.close(Database.java:1173)
+	at org.h2.engine.Database.onShutdown(Database.java:1158)
+	at org.h2.engine.OnExitDatabaseCloser.onShutdown(OnExitDatabaseCloser.java:85)
+	at org.h2.engine.OnExitDatabaseCloser.run(OnExitDatabaseCloser.java:114)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 8 more
+Caused by: org.h2.mvstore.MVStoreException: java.lang.NoClassDefFoundError: org/h2/mvstore/Chunk$PositionComparator [2.3.232/3]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.MVStore.executeFilestoreOperation(MVStore.java:926)
+	at org.h2.mvstore.RandomAccessStore.compactMoveChunks(RandomAccessStore.java:463)
+	at org.h2.mvstore.RandomAccessStore.compactStore(RandomAccessStore.java:443)
+	at org.h2.mvstore.FileStore.compactStore(FileStore.java:890)
+	at org.h2.mvstore.FileStore.stop(FileStore.java:275)
+	at org.h2.mvstore.MVStore.closeStore(MVStore.java:693)
+	at org.h2.mvstore.MVStore.close(MVStore.java:643)
+	at org.h2.mvstore.db.Store.close(Store.java:364)
+	... 6 more
+Caused by: java.lang.NoClassDefFoundError: org/h2/mvstore/Chunk$PositionComparator
+	at org.h2.mvstore.RandomAccessStore.findChunksToMove(RandomAccessStore.java:516)
+	at org.h2.mvstore.RandomAccessStore.compactMoveChunks(RandomAccessStore.java:479)
+	at org.h2.mvstore.RandomAccessStore.lambda$compactMoveChunks$1(RandomAccessStore.java:468)
+	at org.h2.mvstore.FileStore.executeFileStoreOperation(FileStore.java:1893)
+	at org.h2.mvstore.MVStore.executeFilestoreOperation(MVStore.java:922)
+	... 13 more
+Caused by: java.lang.ClassNotFoundException: Illegal access: this web application instance has been stopped already. Could not load [org.h2.mvstore.Chunk$PositionComparator]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1388)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1187)
+	... 18 more
+Caused by: java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [org.h2.mvstore.Chunk$PositionComparator]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1398)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1386)
+	... 20 more
